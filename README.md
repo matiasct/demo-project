@@ -25,5 +25,5 @@ The Json file contains ~6 hours of sensor reading data.
 
 ## Other Requirements:
 
-Each api call should be optimized according the selected level of detail.
-The project must be extensible within the main workflow. i.e., leave logging of who is sending which messages.
+- Each api call should be optimized according the selected level of detail.
+- The project must be extensible within the main workflow. i.e., leave logging of who is sending which messages.
