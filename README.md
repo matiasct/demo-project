@@ -6,14 +6,18 @@ You will use this repository to present your work. Feel free to update this read
 ## Functional Requirements:
 
 The main functionality should be the ability to display a line chart with data provided in data.json (further specified at data structure section).
-Line chart must show on axis Y the corresponding average reading and should have the ability to be zoomed by level of detail on axis X (minute/hour/day).
+Line chart must show on axis Y the corresponding average sensor reading and should have the ability to be zoomed by level of detail on axis X. For example yo could use the following X axis ranges:
+      20 minutes of data
+      1 hour of data
+      2 hours of data
 
 ## Data structure
-data.json
+#### **`data.json`**
+The Json file contains ~6 hours of sensor reading data.
 ```typescript
 {
    [x: string]:{ //iterative number
-      "timestamp": number, //milliseconds 
+      "timestamp": number,  //unix timestamp in miliseconds - link to https://www.unixtimestamp.com/
       "i": number//reading 
     }
 }
